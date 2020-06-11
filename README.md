@@ -67,10 +67,15 @@ python ensembling.py --name mymodel --sets test --index 5
 ```
 
 #### Pre-trained model  
-(to come shortly)
-We release pre-trained models to replicate the results as shown in the paper:
-IEMOCAP 4-class emotions
+We release pre-trained models to replicate the results as shown in the paper. Models should be placed in the `ckpt` folder.
 ```
+mkdir -p ckpt
+```
+
+[IEMOCAP 4-class emotions](https://www.dropbox.com/s/wzoiwrtc9m3nb78/IEMOCAP_pretrained.zip?dl=1)
+```
+python ensembling.py --name IEMOCAP_pretrained --index 5 --sets test
+
               precision    recall  f1-score   support
 
            0       0.70      0.66      0.68       384
@@ -85,8 +90,10 @@ weighted avg       0.73      0.73      0.73      1085
 Max ensemble w-accuracies for test : 72.53456221198157
 ```
 
-Mosei 2-class sentiment 
+MOSEI 2-class sentiment
 ```
+python ensembling.py --name MOSEI_pretrained --index 9 --sets test
+
               precision    recall  f1-score   support
 
            0       0.75      0.57      0.65      1350
@@ -99,8 +106,11 @@ weighted avg       0.82      0.82      0.81      4662
 Max ensemble w-accuracies for test : 82.15358215358215
 ```
 
-MOSI 2-class sentiment 
+[MOSI 2-class sentiment](https://www.dropbox.com/s/zw4a9ukk1npzt9r/MOSI_pretrained.zip?dl=1)
 ```
+python ensembling.py --name MOSI_pretrained --index 2 --sets test
+
+
               precision    recall  f1-score   support
 
            0       0.77      0.91      0.84       379
