@@ -122,3 +122,23 @@ weighted avg       0.80      0.79      0.79       656
 
 Max ensemble w-accuracies for test : 79.26829268292683
 ```
+[MELD 7-class emotions](https://www.dropbox.com/s/458h1ze6cic3h1l/MELD_pretrained.zip?dl=1)
+```
+python ensembling.py --name MELD_pretrained --index 9 --sets test
+
+
+              precision    recall  f1-score   support
+
+           0       0.64      0.52      0.58      1256
+           1       0.36      0.58      0.45       281
+           2       0.08      0.18      0.11        50
+           3       0.23      0.25      0.24       208
+           4       0.44      0.47      0.46       402
+           5       0.23      0.24      0.23        68
+           6       0.31      0.27      0.29       345
+
+    accuracy                           0.45      2610
+   macro avg       0.33      0.36      0.34      2610
+weighted avg       0.48      0.45      0.46      2610
+```
+
